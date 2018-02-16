@@ -1,0 +1,28 @@
+= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+  .card.card-hidden
+    .header.text-center =user_action_title
+    .content
+      .form-group
+        = f.label :name
+        = f.text_field :name, class: 'form-control', required: true, autofocus: true
+
+      .form-group
+        = f.label :email
+        = f.email_field :email, class: 'form-control', required: true
+
+      .form-group
+        = f.label :password
+        -if @minimum_password_length
+          br
+          em="#{t('descriptions.min_password_length')}: #{@minimum_password_length }"
+        = f.password_field :password, class: 'form-control', required: true, autocomplete: 'off'
+
+        =f.hidden_field :locale, value: session[:locale]
+
+      .form-group
+        = f.label :password_confirmation
+        = f.password_field :password_confirmation, class: 'form-control', required: true
+    .footer.text-center
+      = f.submit t('actions.devise.new.button.register'), class: 'btn btn-fill btn-info btn-wd'
+
+=render 'devise/shared/flash'

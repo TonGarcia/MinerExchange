@@ -1,0 +1,23 @@
+-unless resource.errors.empty?
+  -type = 'warning'
+  -title = "<h5>#{I18n.t("errors.messages.not_saved", count: resource.errors.count, resource: resource.class.model_name.human.downcase)}</h5>"
+  -msg = title + '<ul>'
+  -resource.errors.full_messages.each do |error|
+    -msg = "#{msg} <li>#{error}</li>"
+-if flash[:alert] && !flash[:alert].empty?
+  -type = 'warning'
+  -msg = flash[:alert]
+-if flash[:notice] && !flash[:notice].empty?
+  -type = 'info'
+  -msg = flash[:notice]
+  -flash[:info] = nil
+
+javascript:
+    var alertContent = {
+        icon: 'ion-ios-bell-outline',
+        type: '#{type}',
+        text: '#{raw(msg)}'
+    };
+
+    if(alertContent && alertContent.text && alertContent.icon)
+        helper.alert(alertContent.text, alertContent.icon, alertContent.type, 'top', 'right');

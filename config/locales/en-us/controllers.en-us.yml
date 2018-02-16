@@ -1,0 +1,16 @@
+# encoding: UTF-8
+# en-us translations for Controllers
+en-us:
+  controllers:
+    users/sessions: Sign In
+    users/confirmations: Resend confirmation e-mail
+    users/passwords: Recover password
+    users/registrations: Sign Up
+    users/unlocks: Request unlock
+    home: Home
+    skills: Skills
+    professionals: Professionals
+    experiences: Know-how
+    dashboard: Dashboard
+    searches: Searches
+    connections: Connections

@@ -1,0 +1,27 @@
+script type="text/javascript" src="http://d3js.org/d3.v2.js"
+script type="text/javascript" src="http://connect.facebook.net/en_US/all.js"
+
+.header
+  h4.title =t('screen.connections.index.title')
+  p.category =t('screen.connections.index.subtitle')
+
+  #auth-loggedin.category style="display:none"
+    | Logged in as:&nbsp;
+    strong#auth-displayname
+    br
+    a#auth-logoutlink href="#" logout
+
+.content
+  #auth-loggedout
+    a#auth-loginlink href="#" LogIn
+
+  #selected-friend-name
+  #auth-status
+
+  #load-status
+
+  #viz
+  #fb-root
+
+javascript:
+  graphSetup();

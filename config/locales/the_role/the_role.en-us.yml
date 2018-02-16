@@ -1,0 +1,16 @@
+en-us:
+  the_role:
+    access_denied: Access denied
+  the_role_gui:
+    roles:
+      role:
+        # Sections
+        delete_section: Delete Section
+        new_section_placeholder: Section Name
+        create_section: Create Section
+
+        # Rules
+        new_rule_placeholder: Rule Name
+        create_rule: Create Rule
+      sidebar:
+        roles_import: Import Roles

@@ -1,0 +1,69 @@
+ul.nav
+  - if @current_user.admin?
+    li
+      a href="#{admin_roles_path}"
+        i.fa.fa-address-card-o
+        p
+          = t('actions.roles.index')
+
+  li
+    a data-toggle="collapse" href="#searchActions"
+      i.ion-android-search
+      p
+        =t('actions.search.name')
+        b.caret
+    #searchActions.collapse
+      ul.nav
+        li =link_to t('actions.search_type.historic'), searches_path
+        li =link_to t('actions.search_type.by_tag'), new_search_path(type: 'by_tag')
+        li =link_to t('actions.search_type.best_match'), new_search_path(type: 'by_description')
+
+  li
+    a href="#{networking_path}"
+      i.ion-ios-people
+      p
+        =t('actions.connections.name')
+        / b.caret
+    / #network.collapse
+    /   ul.nav
+    /     li: a href="#{professionals_path}" =t('actions.connections.list')
+    /     li: a href="#{new_professional_path}" =t('actions.connections.new')
+
+  li
+    a data-toggle="collapse" href="#professionalsActions"
+      i.ion-ios-personadd
+      p
+        =t('actions.professionals.name')
+        b.caret
+    #professionalsActions.collapse
+      ul.nav
+        li: a href="#{professionals_path}" =t('actions.professionals.list')
+        li: a href="#{new_professional_path}" =t('actions.professionals.new')
+
+  li
+    a data-toggle="collapse" href="#skillsActions"
+      i.ion-university
+      p
+        =t('actions.skills.name')
+        b.caret
+    #skillsActions.collapse
+      ul.nav
+        li: a href="#{skills_path}" =t('actions.skills.list')
+        li: a href="#{new_skill_path}" =t('actions.skills.new')
+
+  /TODO (check): it is associate to a professional, if no professional no know how, is it necessary to have a list?
+  li
+    a data-toggle="collapse" href="#knowHowActions"
+      i.ion-briefcase
+      p
+        =t('actions.experience.name')
+        b.caret
+    #knowHowActions.collapse
+      ul.nav
+        li: a href="#{experiences_path}" =t('actions.experience.list')
+        li: a href="#{new_experience_path}" =t('actions.experience.new')
+
+  li
+    a href="#{root_path}"
+      i.ion-ios-pie
+      p =t('actions.dashboard.name')

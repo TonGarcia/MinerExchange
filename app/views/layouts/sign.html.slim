@@ -1,0 +1,48 @@
+doctype html
+html
+  head
+    =render 'layouts/partials/structure/app_head'
+    =javascript_include_tag 'application', 'data-turbolinks-track' => true
+  body
+
+    .navbar.navbar-transparent.navbar-absolute
+      .container
+        .navbar-header
+          button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2"
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+
+          a.navbar-brand href="#" =product_name
+
+        .collapse.navbar-collapse.flags
+          = flag_list 24, class: 'nav navbar-nav navbar-right' do
+            = flags :br, :us, :fr, selected: current_locale
+
+    .wrapper.wrapper-full-page
+      -if sign_up_page?
+        -sign_up_class = 'sign_up-page'
+      -else
+        -sign_up_class = ''
+      div class="full-page login-page #{sign_up_class}" data-color="azure" data-image="#{image_path('un_flag.png')}"
+        .content
+          .container
+            .row
+              .col-md-4.col-sm-6.col-md-offset-4.col-sm-offset-3
+                = yield
+
+        footer.footer.footer-transparent
+          .container
+            nav.pull-left
+              =render 'devise/shared/list_links'
+
+    javascript:
+        $().ready(function () {
+            lbd.checkFullPageBackgroundImage();
+
+            setTimeout(function () {
+                // after 1000 ms we add the class animated to the login/register card
+                $('.card').removeClass('card-hidden');
+            }, 700)
+        });

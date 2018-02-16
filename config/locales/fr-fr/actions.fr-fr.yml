@@ -1,0 +1,56 @@
+# encoding: UTF-8
+# fr-fr translations for Controllers Actions
+fr-fr:
+  actions:
+    save: Sauver
+    devise:
+      new:
+        link:
+          session: Accès
+          register: S'inscrire
+          password: Récupérer passe
+          confirmation: Reconfirmer l'Email
+          unlock: Débloquer
+        button:
+          session: Accès
+          register: S'inscrire moi
+          password: Envoyez-moi des instructions
+          confirmation: Renvoyer un courriel de confirmation
+          unlock: Déverrouillage des demandes
+    roles:
+      index: Panneau de Rôles
+    controllers:
+      index: Liste
+      edit: Mise à jour
+      new: Register
+      show: Voir
+    search_type:
+      by_tag: par Tag
+      historic: Historique
+      best_match: Best Match
+    search:
+      name: Chercher
+      title: Recherches Récentes
+      subtitle: Historique de vos recherches organisées par date
+    connections:
+      name: Relations
+      list: Liste Relations
+      new: Register Relation
+    professional:
+      name: Profil Professionnel
+    professionals:
+      name: Professionnels
+      list: Liste Professionnels
+      new: Register Professionnels
+    skills:
+      name: Remise des Diplômes
+      list: Liste Diplômes
+      new: Register Diplômes
+    experience:
+      name: Expérience
+      list: Liste Expérience
+      new: Register Expérience
+    dashboard:
+      name: Tableau de Bord
+      title: Utilisation mondiale de MinerExchange par les meilleurs emplacements
+      subtitle: Tous les professionnels qui ont été approuvés en tant que MinerExchange

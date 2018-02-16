@@ -1,0 +1,30 @@
+# encoding: UTF-8
+# en-us translations for Screens
+en-us:
+  screen:
+    current_locale: Current Locale
+    professional_relation_subtitle: Each item has one or more Professionals
+    searches:
+      index:
+        title: Recent Searches
+        subtitle: Searches history ordered by date
+    connections:
+      index:
+        title: Graph Visualization
+        subtitle: Networking/connections between Professionals
+    professionals:
+      index:
+        title: Professionals List
+        subtitle: Show Professionals based on filters, by default all professionals are listed
+    skills:
+      index:
+        title: Educational List
+        subtitle: People's Academy Degrees & other Courses
+    experiences:
+      index:
+        title: Experience List
+        subtitle: People's Academic & Professional Experiences
+    dashboard:
+      index:
+        title: Global usage of MinerExchange
+        subtitle: Amount of Professionals registered at MinerExchange by it location

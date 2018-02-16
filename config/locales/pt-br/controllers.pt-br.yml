@@ -1,0 +1,16 @@
+# encoding: UTF-8
+# pt-BR translations for Controllers
+pt-br:
+  controllers:
+    users/sessions: Dados de Acesso
+    users/confirmations: Re-enviar confirmação de E-mail
+    users/passwords: Recuperar senha
+    users/registrations: Cadastro de Acesso
+    users/unlocks: Requisitar Desbloqueio
+    home: Início
+    skills: Habilidades
+    professionals: Profissionais
+    experiences: Know how
+    dashboard: Painel de Controle
+    searches: Pesquisa
+    connections: Conexões

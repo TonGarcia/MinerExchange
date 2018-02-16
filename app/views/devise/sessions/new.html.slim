@@ -1,0 +1,21 @@
+=form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+  .card.card-hidden
+    .header.text-center =user_action_title
+    .content
+      .form-group
+        =f.label :email
+        = f.email_field :email, class: 'form-control', required: true, autofocus: true
+
+      .form-group
+        = f.label :password
+        = f.password_field :password, class: 'form-control', required: true
+
+      -if devise_mapping.rememberable?
+        .form-group
+          label.checkbox
+            =f.check_box :remember_me, 'data-toggle': 'checkbox'
+            =t('activerecord.attributes.user.remember_me')
+    .footer.text-center
+      = f.submit t('actions.devise.new.button.session'), class: 'btn btn-fill btn-info btn-wd'
+
+=render 'devise/shared/flash'

@@ -1,0 +1,16 @@
+.flag.selected {
+
+}
+
+.flags.collapse.navbar-collapse {
+  .flag {
+    margin: 0 5px;
+    cursor: pointer;
+
+    &.selected {
+      background-color: white;
+      @include border-radius(18px);
+      @include box-shadow(0 3px 19px #fff, 1px 3px 10px #989898);
+    }
+  }
+}

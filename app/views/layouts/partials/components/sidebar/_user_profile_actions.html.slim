@@ -1,0 +1,13 @@
+.user
+  .photo
+    =image_tag 'dumont.gif'
+  .info
+    a.collapsed data-toggle="collapse" href="#collapseExample"
+      =@current_user.name
+      b.caret
+    #collapseExample.collapse
+      ul.nav
+        li: a href="#" My Profile
+        li: a href="#" Edit Profile
+        li: a href="#" Settings
+        li =link_to 'Sair', destroy_user_session_path

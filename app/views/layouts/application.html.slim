@@ -1,0 +1,51 @@
+doctype html
+html
+  head
+    =render 'layouts/partials/structure/app_head'
+    =javascript_include_tag 'application', 'data-turbolinks-track' => true
+  body
+    .wrapper
+      .sidebar data-color="azure" data-image="#{image_path('un_flag.png')}"
+        .logo
+          a href="#" class="logo-text" =product_name
+        .logo.logo-mini
+          a href="#" class="logo-text" PN
+
+
+        .sidebar-wrapper
+          =render 'layouts/partials/components/sidebar/user_profile_actions'
+
+          -if @current_user.admin? || @current_user.moderator?
+            =render 'layouts/partials/components/sidebar/resources_actions/admin'
+          -else
+            =render 'layouts/partials/components/sidebar/resources_actions/user'
+
+
+      .main-panel
+        nav.navbar.navbar-default
+          .container-fluid
+            .navbar-minimize
+              button#minimizeSidebar.btn.btn-info.btn-fill.btn-round.btn-icon
+                i.fa.fa-ellipsis-v.visible-on-sidebar-regular
+                i.fa.fa-navicon.visible-on-sidebar-mini
+            .navbar-header
+              button.navbar-toggle type="button" data-toggle="collapse"
+                span.sr-only Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+              a.navbar-brand href="#" =screen_name
+            .collapse.navbar-collapse.nav.navbar-nav.navbar-right.flags
+              = flag_list 24, class: 'nav navbar-nav navbar-right' do
+                = flags :br, :us, :fr, selected: current_locale
+
+
+        .content
+          .container-fluid
+            -if card_page?
+              .row
+                .col-md-12
+                  .card
+                    =yield
+            -else
+              =yield

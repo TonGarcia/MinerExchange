@@ -1,0 +1,11 @@
+=form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }) do |f|
+  .card.card-hidden
+    .header.text-center =user_action_title
+    .content
+      =devise_alerts
+      .form-group
+        = f.label :email
+        = f.email_field :email, class: 'form-control', required: true, autofocus: true
+
+    .footer.text-center
+      = f.submit t('actions.devise.new.button.unlock'), class: 'btn btn-fill btn-info btn-wd'

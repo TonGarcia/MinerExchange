@@ -1,0 +1,30 @@
+# encoding: UTF-8
+# pt-br translations for Screens
+pt-br:
+  screen:
+    current_locale: Idioma Atual
+    professional_relation_subtitle: Cada item contempla um ou mais Profissionais
+    searches:
+      index:
+        title: Pesquisas Recentes
+        subtitle: Histórico de Buscas organizado por data
+    connections:
+      index:
+        title: Visualização em Grafo
+        subtitle: Networking/conexões entre os Profissionais
+    professionals:
+      index:
+        title: Listagem de Profissionais
+        subtitle: Lista os profissionais por filtros, por padrão mostra todos os Profissionais
+    skills:
+      index:
+        title: Listagem Educacional
+        subtitle: Formações Acadêmicas e Cursos feitos pelos Profissionais da base
+    experiences:
+      index:
+        title: Listagem das Experiências
+        subtitle: Experiências Profissionais e/ou Acadêmicas dos Profissionais da base
+    dashboard:
+      index:
+        title: Uso Global do MinerExchange por Localização
+        subtitle: Todos profissionais que foram aprovados como MinerExchange

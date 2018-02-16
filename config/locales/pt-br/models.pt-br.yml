@@ -1,0 +1,53 @@
+# encoding: UTF-8
+# pt-br translations for Models
+pt-br:
+  activerecord:
+    models:
+      user: Usuário
+      skill: Habilidade
+      professional: Profissional
+      experience: Know how
+
+    attributes:
+
+  # User -----------------------------------------------------
+      user:
+        name: Nome completo
+        email: E-mail
+        locale: Idioma
+        timezone: Fuso-horário
+        password: Senha
+        password_confirmation: Confirmação da Senha
+        remember_me: Lembrar dados
+
+  # Skill -----------------------------------------------------
+      skill:
+        name: Nome
+
+  # Professional -----------------------------------------------------
+      professional:
+        name: Nome
+        first_name: Primeiro Nome
+        last_name: Último Nome
+        address: Endreço Postal Completo
+        zip: CEP
+        country: País
+        state: Estado
+        city: Cidade
+        company: Empresa
+        email: Endereço de E-mail
+        facebook: Nome de usuário no Facebook
+        linked_in: Nome de usuário no LinkedIn
+        twitter: Nome de usuário no Twitter
+        quote: Citação ou um breve "sobre"
+
+
+  # KnowHow -----------------------------------------------------
+#      experience:
+#        partnerships: Potenciais Parceiros
+#        revenue_model: Modelos de Receita
+#        value_proposition: Proposta de Valor
+#        advantages: Vantagens sobre a Concorrência
+#        disadvantages: Desvantagens sobre a Concorrência
+#        main_product_price: Preço do Produto/Serviço
+#        customer_success_stories: Feedback positivo de Consumidores

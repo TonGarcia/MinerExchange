@@ -1,0 +1,16 @@
+pt-br:
+  the_role:
+    access_denied: "Acesso negado"
+  the_role_gui:
+    roles:
+      role:
+        # Sections
+        delete_section: Deletar Sessão
+        new_section_placeholder: Nome da Sessão
+        create_section: Criar Sessão
+
+        # Rules
+        new_rule_placeholder: Nome da Regra
+        create_rule: Criar Regra
+      sidebar:
+        roles_import: Importar Funções Adm.

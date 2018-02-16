@@ -1,0 +1,6 @@
+# encoding: UTF-8
+# pt-BR translations for Controllers
+pt-br:
+  descriptions:
+    product_name: Exchange Miner
+    min_password_length: mínimo de caracteres

@@ -1,0 +1,56 @@
+# encoding: UTF-8
+# pt-br translations for Controllers Actions
+pt-br:
+  actions:
+    save: Salvar
+    devise:
+      new:
+        link:
+          session: Já Possuo Cadastro
+          register: Quero me Cadastrar
+          password: Recuperar Senha
+          confirmation: Reconfirmar meu E-mail
+          unlock: Desbloquear Conta
+        button:
+          session: Acessar
+          register: Cadastrar-me
+          password: Enviar instruções
+          confirmation: Enviar confirmação
+          unlock: Requisitar desbloqueio
+    roles:
+      index: Painel de Papéis
+    controllers:
+      index: Lista
+      edit: Atualizar
+      new: Adicionar
+      show: Visualizar
+    search_type:
+      by_tag: por Tag
+      historic: Histórico
+      best_match: Best Match
+    search:
+      name: Pesquisar
+      title: Pesquisas Recentes
+      subtitle: Histórico das suas pesquisas organizado por data
+    connections:
+      name: Conexões
+      list: Listar Conexões
+      new: Criar nova Conexão
+    professional:
+      name: Perfil Profissional
+    professionals:
+      name: Profissionais
+      list: Listar Profissionais
+      new: Registrar Perfil Profissional
+    skills:
+      name: Formação
+      list: Listar Formações
+      new: Registrar nova Formação
+    experience:
+      name: Experiência
+      list: Listar Experiências
+      new: Registra nova Experiência
+    dashboard:
+      name: Painel
+      title: Uso Global do MinerExchange por Localização
+      subtitle: Todos profissionais que foram aprovados como MinerExchange

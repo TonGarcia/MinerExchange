@@ -1,0 +1,36 @@
+ul.nav
+  li
+    a data-toggle="collapse" href="#professionalsActions"
+      i.ion-ios-personadd
+      p
+        = t('actions.professional.name')
+        b.caret
+    #professionalsActions.collapse
+      ul.nav
+        li
+          a href="#{new_professional_path}"
+            =t('actions.professionals.new')
+
+
+  li
+    a data-toggle="collapse" href="#knowHowActions"
+      i.ion-briefcase
+      p
+        = t('actions.experience.name')
+        b.caret
+    #knowHowActions.collapse
+      ul.nav
+        li: a href="#{experiences_path}" = t('actions.experience.list')
+        li: a href="#{new_experience_path}" = t('actions.experience.new')
+
+
+  li
+    a data-toggle="collapse" href="#skillsActions"
+      i.ion-university
+      p
+        = t('actions.skills.name')
+        b.caret
+    #skillsActions.collapse
+      ul.nav
+        li: a href="#{skills_path}" = t('actions.skills.list')
+        li: a href="#{new_skill_path}" = t('actions.skills.new')

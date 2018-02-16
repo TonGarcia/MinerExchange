@@ -1,0 +1,9 @@
+title ="#{app_name} - #{t("controllers.#{params[:controller]}")}"
+meta name="description" content="#{app_name_slogan}"
+meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"
+
+link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'
+= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+
+/= favicon_link_tag 'brand/purple_small_flame_tmp.png'
+= csrf_meta_tags

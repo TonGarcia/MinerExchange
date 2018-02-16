@@ -84,7 +84,7 @@ GEM
       unicode_utils (~> 1.4)
     cpf_cnpj (0.3.0)
     crass (1.0.3)
-    creative_tim (0.0.7)
+    creative_tim (0.0.8)
       railties
     d3_rails (4.1.1)
       railties (>= 3.1.0)
@@ -331,7 +331,7 @@ DEPENDENCIES
   colorize (~> 0.8.1)
   countries (~> 2.1.2)
   cpf_cnpj (~> 0.3.0)
-  creative_tim (~> 0.0.7)!
+  creative_tim (~> 0.0.8)!
   d3_rails (~> 4.1, >= 4.1.1)
   devise (~> 4.3.0)
   enumerate_it (~> 1.6.1)

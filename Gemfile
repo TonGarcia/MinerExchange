@@ -98,7 +98,7 @@ gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
 
 # Creative-Tim assets Private-GEM
 source 'https://B14-9aQKAAQ2Vzjx4UhV@gem.fury.io/tongarcia/' do
-  gem 'creative_tim', '~> 0.0.7'
+  gem 'creative_tim', '~> 0.0.8'
 end
 
 

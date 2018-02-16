@@ -40,7 +40,7 @@ class ApplicationController < ActionController::Base
   def solve_layout
     case params[:controller]
       when 'home'
-        'blank'
+        'landing'
       else
         'application'
     end

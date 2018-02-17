@@ -1,0 +1,46 @@
+// Frameworks
+@import 'creative-tim-pro/light_dashboard/bootstrap.min';
+@import 'ionicons';
+@import 'ionicons-icons';
+@import 'landing';
+
+@media (min-width: 768px) {
+  .header-section-1 .section-separator {
+    padding-top: 200px;
+    padding-bottom: 250px;
+  }
+}
+
+#header .section-heading {
+  padding-bottom: 23px;
+}
+
+.subscribe-header {
+  margin: 5% auto 8%;
+}
+
+section#header, .overlay-color {
+  border: none !important;
+}
+
+.overlay-color {
+  background: linear-gradient( rgba(1, 63, 66, 0.85),
+                               rgba(26, 89, 93, 0.85)),
+              url( <%= asset_path 'bgs/datacenter.jpg' %> ) 50% 100% !important;
+}
+
+form#contact-form {
+  .btn-form {
+    padding: 0 !important;
+    margin-top: 0 !important;
+
+    .btn {
+      line-height: 40px;
+      border-radius: 5px;
+      padding: 0 30px;
+      box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+      font-weight: 600;
+      font-family: 'Lato', sans-serif;
+    }
+  }
+}

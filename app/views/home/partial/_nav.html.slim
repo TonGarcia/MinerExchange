@@ -1,0 +1,17 @@
+header.okayNav-header.main-navbar-top.navbar-clean
+  nav.navbar.navbar-default.navbar-static-top style="background: none"
+    .container
+      .navbar-header
+        button#btn-nav.navbar-toggle.collapsed type='button' data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        =link_to landing_path, class: 'okayNav-header__logo navbar-brand' do
+          =image_tag 'brands/logo.png', class: 'logo-1 img-responsive'
+          =image_tag 'brands/logo_dark.png', class: 'logo-2 img-responsive'
+
+      #navbar.navbar-collapse.collapse
+        ul#navbar-nav.navbar-nav.pull-right
+          li: a.btn-nav href="#" target="_blank": span.nav-line.select-btn Acessar
+          li: a.btn-nav href="#" target="_blank": span.nav-line Criar Conta

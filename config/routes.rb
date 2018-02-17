@@ -25,6 +25,7 @@ Rails.application.routes.draw do
              }
 
   # Not Persistence actions
+  get 'landing', to: 'home#index', as: :landing
   get 'dashboard', to: 'dashboard#index', as: :dashboard
   get 'networking', to: 'connections#index', as: :networking
 

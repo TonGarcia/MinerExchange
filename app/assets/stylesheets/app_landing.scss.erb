@@ -59,13 +59,22 @@ i.icon {
 
 ul, ol {
   &.negative {
-    i {
-      color: red !important;
+    > li:before {
+      content: "\f129";
+      font-family: Ionicons;
+      display: inline-block;
       margin-right: 10px;
+      color: red !important;
     }
   }
-}
 
-ol ul li {
-  list-style: circle;
+  &.positive {
+    > li:before {
+      content: "\f121";
+      font-family: Ionicons;
+      display: inline-block;
+      margin-right: 10px;
+      color: teal !important;
+    }
+  }
 }

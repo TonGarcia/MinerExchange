@@ -19,3 +19,7 @@
 @import "views/sign";
 @import "views/localize";
 @import "views/connections";
+
+.full-page.transparent:after {
+  background: none !important;
+}

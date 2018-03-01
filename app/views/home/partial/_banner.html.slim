@@ -10,10 +10,9 @@ section#header.header-section-1.bg-image-1.header-js
 
             .form-outer.banner-form.subscribe-header
               .clearfix
-              form#contact-form.single-form
-                .col-lg-4.col-lg-offset-2.col-md-5.col-md-offset-1.col-sm-5.col-sm-offset-1.col-xs-12
-                  input#contact-email.contact-email.form-control name="email" type="email" placeholder="Informe seu E-mail"
-                .btn-form.col-xs-12.col-sm-5.col-md-3
-                  button.btn Saiba mais
+                .col-xs-12.col-sm-5.col-md-3.col-lg-offset-1
+                  a.btn.btn-lg href="#{new_user_session_path}" SignIn
+                .col-xs-12.col-sm-5.col-md-3.col-lg-offset-2
+                  a.btn.btn-lg href="#{new_user_registration_path}" SignUp
 
   =image_tag 'effect/wave.png', class: 'wave'

@@ -16,16 +16,18 @@ html
 
           a.navbar-brand href="#" =product_name
 
-        .collapse.navbar-collapse.flags
-          = flag_list 24, class: 'nav navbar-nav navbar-right' do
-            = flags :br, :us, :fr, selected: current_locale
+        / .collapse.navbar-collapse.flags
+        /   = flag_list 24, class: 'nav navbar-nav navbar-right' do
+        /     = flags :br, :us, :fr, selected: current_locale
 
     .wrapper.wrapper-full-page
       -if sign_up_page?
         -sign_up_class = 'sign_up-page'
       -else
         -sign_up_class = ''
-      div class="full-page login-page #{sign_up_class}" data-color="azure" data-image="#{image_path('un_flag.png')}"
+
+      /data-color="azure"
+      div class="full-page transparent login-page #{sign_up_class}" data-image="#{image_path('bgs/trade_bright1.png')}"
         .content
           .container
             .row

@@ -12,7 +12,7 @@ en-us:
 
   # User -----------------------------------------------------
       user:
-        name: Name
+        name: Full Name
         email: E-mail
         locale: Idiom
         timezone: Timezone

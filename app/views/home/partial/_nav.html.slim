@@ -7,11 +7,11 @@ header.okayNav-header.main-navbar-top.navbar-clean
           span.icon-bar
           span.icon-bar
           span.icon-bar
-        =link_to landing_path, class: 'okayNav-header__logo navbar-brand' do
-          =image_tag 'brands/logo.png', class: 'logo-1 img-responsive'
-          =image_tag 'brands/logo_dark.png', class: 'logo-2 img-responsive'
+        / =link_to landing_path, class: 'okayNav-header__logo navbar-brand' do
+        /   =image_tag 'brands/logo.png', class: 'logo-1 img-responsive'
+        /   =image_tag 'brands/logo_dark.png', class: 'logo-2 img-responsive'
 
       #navbar.navbar-collapse.collapse
         ul#navbar-nav.navbar-nav.pull-right
-          li: a.btn-nav href="#" target="_blank": span.nav-line.select-btn Acessar
-          li: a.btn-nav href="#" target="_blank": span.nav-line Criar Conta
+          li: a.btn-nav href="#{new_user_session_path}": span.nav-line.select-btn Acessar
+          li: a.btn-nav href="#{new_user_registration_path}": span.nav-line Criar Conta

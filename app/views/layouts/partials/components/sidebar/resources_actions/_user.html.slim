@@ -1,36 +1,43 @@
-ul.nav
+ul.nav.sider
+  li.divider
+    b =t('actions.section.lending')
   li
-    a data-toggle="collapse" href="#professionalsActions"
-      i.ion-ios-personadd
-      p
-        = t('actions.professional.name')
-        b.caret
-    #professionalsActions.collapse
-      ul.nav
-        li
-          a href="#{new_professional_path}"
-            =t('actions.professionals.new')
+    a href="#"
+      i.ion-connection-bars
+      p =t('actions.dashboard.name')
 
+
+ul.nav.sider
+  li.divider
+    b =t('actions.section.general')
+  li
+    a href="#"
+      i.fi.flaticon-coins-1
+      p =t('actions.buy_coins')
+  li
+    a href="#"
+      i.fi.flaticon-coin
+      p =t('actions.earn_per_invite')
+  li
+    a href="#"
+      =render 'layouts/icons/wallet'
+      span =t('actions.wallets.name')
+  li
+    a href="#"
+      =render 'layouts/icons/history'
+      span =t('actions.history.name')
+
+
+ul.nav.sider
+  li.divider
+    b =t('actions.section.trading')
 
   li
-    a data-toggle="collapse" href="#knowHowActions"
-      i.ion-briefcase
-      p
-        = t('actions.experience.name')
-        b.caret
-    #knowHowActions.collapse
-      ul.nav
-        li: a href="#{experiences_path}" = t('actions.experience.list')
-        li: a href="#{new_experience_path}" = t('actions.experience.new')
-
+    a href="#"
+      = render 'layouts/icons/offers_book'
+      span = t('actions.offers_book.name')
 
   li
-    a data-toggle="collapse" href="#skillsActions"
-      i.ion-university
-      p
-        = t('actions.skills.name')
-        b.caret
-    #skillsActions.collapse
-      ul.nav
-        li: a href="#{skills_path}" = t('actions.skills.list')
-        li: a href="#{new_skill_path}" = t('actions.skills.new')
+    a href="#"
+      = render 'layouts/icons/exchange'
+      span = t('actions.my_orders.name')

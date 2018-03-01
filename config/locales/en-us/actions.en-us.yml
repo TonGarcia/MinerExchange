@@ -3,6 +3,8 @@
 en-us:
   actions:
     save: Save
+    buy_coins: Buy StarterChain
+    earn_per_invite: Earn per Invite
     devise:
       new:
         link:
@@ -17,6 +19,10 @@ en-us:
           password: Send me instructions
           confirmation: Resend confirmation e-mail
           unlock: Request unlock
+    section:
+      general: General
+      lending: Lending Investiment
+      trading: Trading Exchange
     roles:
       index: Panel of Roles
     controllers:
@@ -24,33 +30,17 @@ en-us:
       edit: Update
       new: Add
       show: View
-    search_type:
-      by_tag: By Tag
-      historic: Historic
-      best_match: Best Match
-    search:
-      name: Search
-      title: Recent Searches
-      subtitle: Searches history ordered by date
-    connections:
-      name: Connections
-      list: List Connections
-      new: Create a new Connection
-    professional:
-      name: Professional Profile
-    professionals:
-      name: Professionals
-      list: List Professionals
-      new: Insert new Professional
-    skills:
-      name: Skills
-      list: List Skills
-      new: Insert new Skill
-    experience:
-      name: Know How
-      list: List Know Hows
-      new: Register new KnowHow
+    wallets:
+      name: My Wallets
+      list: Listar Profissionais
+      new: Registrar Perfil Profissional
+      title: Pesquisas Recentes
+      subtitle: Histórico das suas pesquisas organizado por data
+    history:
+      name: History
     dashboard:
       name: Dashboard
-      title: Global MinerExchange Usage by Top Locations
-      subtitle: All professionals that were approved as MinerExchange
+    offers_book:
+      name: Offers book
+    my_orders:
+      name: My orders

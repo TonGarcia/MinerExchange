@@ -33,5 +33,6 @@ Rails.application.routes.draw do
   resources :connections
 
   # Landing
-  root to: 'home#index'
+  # root to: 'home#index'
+  root to: 'dashboard#index'
 end

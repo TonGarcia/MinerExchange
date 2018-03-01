@@ -6,13 +6,20 @@ module ApplicationHelper
 
   # Must return it app name based on user locale (default is pt-BR)
   def app_name
-    'MinerExchange'
+    t('descriptions.product_name').remove(' ')
   end
 
   # Must return ittem app slogan phrase based on user locale (default is pt-BR)
   def slogan
     # 'A maneira mais fácil de pré-qualificar ao Atlas.'
     ''
+  end
+
+  # svg helper
+  def svg(name)
+    file_path = "#{Rails.root}/app/views/layouts/icons/set/#{name}.svg"
+    return File.read(file_path).html_safe if File.exists?(file_path)
+    '(not found)'
   end
 
   # Return it app_name with it slogan

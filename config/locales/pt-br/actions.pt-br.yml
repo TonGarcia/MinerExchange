@@ -3,6 +3,8 @@
 pt-br:
   actions:
     save: Salvar
+    buy_coins: Compre StarterChain
+    earn_per_invite: Ganhe por Convite
     devise:
       new:
         link:
@@ -17,6 +19,10 @@ pt-br:
           password: Enviar instruções
           confirmation: Enviar confirmação
           unlock: Requisitar desbloqueio
+    section:
+      general: Global
+      lending: Renda Fixa
+      trading: Trading
     roles:
       index: Painel de Papéis
     controllers:
@@ -24,33 +30,15 @@ pt-br:
       edit: Atualizar
       new: Adicionar
       show: Visualizar
-    search_type:
-      by_tag: por Tag
-      historic: Histórico
-      best_match: Best Match
-    search:
-      name: Pesquisar
-      title: Pesquisas Recentes
-      subtitle: Histórico das suas pesquisas organizado por data
-    connections:
-      name: Conexões
-      list: Listar Conexões
-      new: Criar nova Conexão
-    professional:
-      name: Perfil Profissional
-    professionals:
-      name: Profissionais
+    wallets:
+      name: Minhas Carteiras
       list: Listar Profissionais
       new: Registrar Perfil Profissional
-    skills:
-      name: Formação
-      list: Listar Formações
-      new: Registrar nova Formação
-    experience:
-      name: Experiência
-      list: Listar Experiências
-      new: Registra nova Experiência
-    dashboard:
-      name: Painel
-      title: Uso Global do MinerExchange por Localização
-      subtitle: Todos profissionais que foram aprovados como MinerExchange
+      title: Pesquisas Recentes
+      subtitle: Histórico das suas pesquisas organizado por data
+    history:
+      name: Extrato
+    offers_book:
+      name: Livro de ofertas
+    my_orders:
+      name: Minhas ordens

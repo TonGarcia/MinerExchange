@@ -14,6 +14,7 @@
 @import 'ionicons-icons';
 @import "mixins";
 @import "helpers";
+@import "addons/flatbusiness";
 
 // App Styles
 @import "views/sign";
@@ -22,4 +23,59 @@
 
 .full-page.transparent:after {
   background: none !important;
+}
+
+.sidebar[data-color="dark"]:after,
+.bootstrap-navbar[data-color="dark"]:after {
+  background: rgba(120, 120, 120, 0);
+  background: -moz-linear-gradient(top, rgba(120, 120, 120, 0) 0%, rgba(52, 52, 52, 0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(120, 120, 120, 0)), color-stop(100%, rgba(52, 52, 52, 0)));
+  background: -webkit-linear-gradient(top, rgba(120, 120, 120, 0) 0%, rgba(52, 52, 52, 0) 100%);
+  background: -o-linear-gradient(top, rgba(120, 120, 120, 0) 0%, rgba(52, 52, 52, 0) 100%);
+  background: -ms-linear-gradient(top, rgba(120, 120, 120, 0) 0%, rgba(52, 52, 52, 0) 100%);
+  background: linear-gradient(to bottom, rgba(120, 120, 120, 0) 0%, rgba(52, 52, 52, 0.7) 100%);
+  background-size: 150% 150%;
+  z-index: 3;
+  opacity: 1;
+}
+
+ul.nav.sider {
+  margin-bottom: 25px;
+
+  p {
+    font-size: 14px;
+    font-weight: normal !important;
+    text-transform: none !important;
+  }
+}
+
+.sidebar .nav i.fi {
+  font-size: 19px;
+  margin-left: -7px;
+}
+
+.btn.btn-default.shadow {
+  -webkit-transition: width 2s !important;
+  transition: width 2s !important;
+}
+
+.btn.btn-default.shadow:hover {
+  color: black !important;
+  border-color: black !important;
+  box-shadow: 5px 3px 15px #888888;
+}
+
+li.divider {
+  margin: 5px 30px 0;
+  border-radius: 4px;
+  color: #FFFFFF;
+  opacity: .86;
+  text-transform: uppercase;
+}
+
+a {
+  span {
+    margin-left: 20px;
+    position: absolute;
+  }
 }

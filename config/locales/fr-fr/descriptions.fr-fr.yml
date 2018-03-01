@@ -1,6 +1,0 @@
-# encoding: UTF-8
-# fr-fr translations for Controllers
-fr-fr:
-  descriptions:
-    product_name: Miner Exchange
-    min_password_length: caractères minimum

@@ -5,10 +5,6 @@ ul.nav.sider
     a href="#"
       i.ion-connection-bars
       p =t('actions.dashboard.name')
-  li
-    a href="#"
-      i.fi.flaticon-coin-10
-      p =t('actions.bitcoin_earns')
 
 
 ul.nav.sider
@@ -30,18 +26,3 @@ ul.nav.sider
     a href="#"
       =render 'layouts/icons/history'
       span =t('actions.history.name')
-
-
-ul.nav.sider
-  li.divider
-    b =t('actions.section.trading')
-
-  li
-    a href="#"
-      = render 'layouts/icons/offers_book'
-      span = t('actions.offers_book.name')
-
-  li
-    a href="#"
-      = render 'layouts/icons/exchange'
-      span = t('actions.my_orders.name')

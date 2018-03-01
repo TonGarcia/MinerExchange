@@ -3,8 +3,9 @@
 en-us:
   actions:
     save: Save
-    buy_coins: Buy StarterChain
+    buy_coins: Trade StarterChain
     earn_per_invite: Earn per Invite
+    bitcoin_earns: Earned Bitcoin
     devise:
       new:
         link:

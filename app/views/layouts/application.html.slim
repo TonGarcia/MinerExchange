@@ -18,7 +18,10 @@ html
           -if @current_user.admin? || @current_user.moderator?
             =render 'layouts/partials/components/sidebar/resources_actions/admin'
           -else
-            =render 'layouts/partials/components/sidebar/resources_actions/user'
+            -if params[:full_sidebar]
+              =render 'layouts/partials/components/sidebar/resources_actions/user'
+            -else
+              =render 'layouts/partials/components/sidebar/resources_actions/initial_user'
 
 
       .main-panel

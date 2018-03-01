@@ -3,8 +3,9 @@
 pt-br:
   actions:
     save: Salvar
-    buy_coins: Compre StarterChain
-    earn_per_invite: Ganhe por Convite
+    buy_coins: Negocie StarterChain
+    earn_per_invite: Ganhe por convite
+    bitcoin_earns: Bitcoin ganhos
     devise:
       new:
         link:

@@ -40,7 +40,8 @@ en-us:
     history:
       name: History
     dashboard:
-      name: Dashboard
+      mine: My Earns Dashboard
+      globe: Global Dashboard
     offers_book:
       name: Offers book
     my_orders:

@@ -39,6 +39,9 @@ pt-br:
       subtitle: Histórico das suas pesquisas organizado por data
     history:
       name: Extrato
+    dashboard:
+      mine: Meu Painel de Ganhos
+      globe: Painel Global
     offers_book:
       name: Livro de ofertas
     my_orders:

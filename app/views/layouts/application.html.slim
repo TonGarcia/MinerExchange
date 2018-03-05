@@ -27,10 +27,10 @@ html
       .main-panel
         nav.navbar.navbar-default
           .container-fluid
-            .navbar-minimize
-              button#minimizeSidebar.btn.btn-default.btn-fill.btn-round.btn-icon
-                i.fa.fa-ellipsis-v.visible-on-sidebar-regular
-                i.fa.fa-navicon.visible-on-sidebar-mini
+            / .navbar-minimize
+            /   button#minimizeSidebar.btn.btn-default.btn-fill.btn-round.btn-icon
+            /     i.fa.fa-ellipsis-v.visible-on-sidebar-regular
+            /     i.fa.fa-navicon.visible-on-sidebar-mini
             .navbar-header
               button.navbar-toggle type="button" data-toggle="collapse"
                 span.sr-only Toggle navigation
@@ -38,9 +38,10 @@ html
                 span.icon-bar
                 span.icon-bar
               a.navbar-brand href="#" =screen_name
-            ul.nav.navbar-nav.navbar-right
-              li
-                a.btn.btn-default.shadow Buy StarterChain
+
+            / ul.nav.navbar-nav.navbar-right
+            /   li
+            /     a.btn.btn-default.shadow Buy StarterChain
 
             / .collapse.navbar-collapse.nav.navbar-nav.navbar-right.flags
             /   = flag_list 24, class: 'nav navbar-nav navbar-right' do

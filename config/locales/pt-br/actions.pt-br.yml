@@ -31,6 +31,8 @@ pt-br:
       edit: Atualizar
       new: Adicionar
       show: Visualizar
+      mine: Meu
+      global: Global
     wallets:
       name: Minhas Carteiras
       list: Listar Profissionais

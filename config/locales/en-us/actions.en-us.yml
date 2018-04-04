@@ -31,6 +31,8 @@ en-us:
       edit: Update
       new: Add
       show: View
+      mine: Mine
+      global: Global
     wallets:
       name: My Wallets
       list: Listar Profissionais

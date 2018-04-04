@@ -1,0 +1,40 @@
+.row
+  .col-md-12
+    .card
+      .header
+        h4.title =t('actions.dashboard.title')
+        p.category =t('actions.dashboard.subtitle')
+      .content
+        .row
+          .col-md-5
+            .table-responsive
+              table.table
+                tbody
+                  -top_countries_usage = default_countries_top_usage
+                  -top_countries_usage.each do |country|
+                    tr
+                      td
+                        .flag
+                          =image_tag "flags/#{country[:locale]}.png"
+                      td =country[:obj].data['translations'][I18n.locale.to_s]
+                      td.text-right = number_with_delimiter country[:amount], locale: session[:locale]
+          .col-md-6.col-md-offset-1
+            #worldMap style="height: 300px; max-height: 300px;"
+
+javascript:
+    var mapData = JSON.parse('#{to_map_data top_countries_usage}');
+    console.log('mapData', mapData);
+
+    var loadedCharts = false;
+    initDashboard = function () {
+        if(loadedCharts) return;
+        loadedCharts = true;
+
+        //demo.initDashboardPageCharts();
+        demo.initVectorMap();
+    };
+
+    $(document).ready(initDashboard);
+    $(document).on('page:load', initDashboard);
+    //document.addEventListener('turbolinks:request-start', initDashboard);
+    //document.addEventListener('turbolinks:load', initDashboard);

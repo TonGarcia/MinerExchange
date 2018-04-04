@@ -25,14 +25,14 @@ Rails.application.routes.draw do
              }
 
   # Not Persistence actions
+  get 'dashboard/mine', as: :mine_dashboard
+  get 'dashboard/global', as: :global_dashboard
   get 'landing', to: 'home#index', as: :landing
-  get 'dashboard', to: 'dashboard#index', as: :dashboard
-  get 'networking', to: 'connections#index', as: :networking
 
   # Resources (CRUDs)
   resources :connections
 
   # Landing
   # root to: 'home#index'
-  root to: 'dashboard#index'
+  root to: 'dashboard#mine'
 end

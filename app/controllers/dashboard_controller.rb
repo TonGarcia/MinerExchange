@@ -1,4 +1,7 @@
 class DashboardController < ApplicationController
-  def index
+  def mine
+  end
+
+  def global
   end
 end

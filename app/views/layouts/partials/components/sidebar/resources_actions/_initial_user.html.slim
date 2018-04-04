@@ -2,11 +2,11 @@ ul.nav.sider
   li.divider
     b =t('actions.section.lending')
   li
-    a href="#"
+    a href="#{mine_dashboard_path}"
       i.ion-connection-bars
       p =t('actions.dashboard.mine')
   li
-    a href="#"
+    a href="#{global_dashboard_path}"
       i.ion-earth
       p =t('actions.dashboard.globe')
 
@@ -15,7 +15,7 @@ ul.nav.sider
   li.divider
     b =t('actions.section.general')
   li
-    a href="#"
+    a href="#{global_dashboard_path}"
       i.fi.flaticon-coins-1
       p =t('actions.buy_coins')
   li
